@@ -10,18 +10,18 @@
 
 int check_cycle(listint_t *list)
 {
-listint_t *f = NULL;
-listint_t *s = NULL;
+listint_t *fst = NULL;
+listint_t *scd = NULL;
 
-f = list;
-s = list;
+fst = list;
+scd = list;
 if (list == NULL)
 return (0);
-for (; f != NULL && f->next != NULL;)
+for (; fst != NULL && fst->next != NULL;)
 {
-s = s->next;
-f = (f->next)->next;
-if (f == s)
+scd = scd->next;
+fst = fst->next->next;
+if (fst == scd)
 return (1);
 }
 return (0);

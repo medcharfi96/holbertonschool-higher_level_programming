@@ -31,8 +31,10 @@ int verif_list(listint_t **head, int number, listint_t *nouveau)
 
 	if (*head == NULL)
 		{
-			verif_node(*head, number);
-			res = 1;
+		nouveau->n = number;
+		nouveau->next = *head;
+		*head = nouveau;
+		res = 1;
 		}
 	else if ((*head)->n >= number)
 		{
@@ -62,7 +64,7 @@ listint_t *insert_node(listint_t **head, int number)
 	switch (res)
 	{
 	case 1:
-		return (*head);
+		return (nouveau);
 	case  2:
 		return (nouveau);
 	case  0:

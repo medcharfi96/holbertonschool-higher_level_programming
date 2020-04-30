@@ -2,18 +2,22 @@
 from calculator_1 import add, sub, mul, div
 import sys
 if __name__ == "__main__":
+    zeb = sys.argv
     if len(sys.argv) == 4:
-        if (sys.argv[2] != "+" and sys.argv[2] != "*" and sys.argv[2] != "-" and sys.argv[2] != "/"):
+        opr = zeb[2]
+        a = int(zeb[1])
+        z = int(zeb[3])
+        if (opr != "+" and opr != "*" and opr != "-" and opr != "/"):
             print("Unknown operator. Available operators: +, -, * and /")
             sys.exit(1)
-        elif sys.argv[2] == "*":
-            print("{:d} + {:d} = {:d}".format(int(sys.argv[1]), int(sys.argv[3]), mul(int(sys.argv[1]), int(sys.argv[3]))))
-        elif sys.argv[2] == "+":
-            print("{:d} + {:d} = {:d}".format(int(sys.argv[1]), int(sys.argv[3]), add(int(sys.argv[1]), int(sys.argv[3]))))
-        elif sys.argv[2] == "-":
-            print("{:d} - {:d} = {:d}".format(int(sys.argv[1]), int(sys.argv[3]), sub(int(sys.argv[1]), int(sys.argv[3]))))
-        elif sys.argv[2] == "/":
-            print("{:d} / {:d} = {:d}".format(int(sys.argv[1]), int(sys.argv[3]), div(int(sys.argv[1]), int(sys.argv[3]))))
+        elif zeb[2] == "*":
+            print("{:d} + {:d} = {:d}".format(a, z, mul(a, z)))
+        elif zeb[2] == "+":
+            print("{:d} + {:d} = {:d}".format(a, z, add(a, z)))
+        elif zeb[2] == "-":
+            print("{:d} - {:d} = {:d}".format(a, z, sub(a, z)))
+        elif zeb[2] == "/":
+            print("{:d} / {:d} = {:d}".format(a, z, div(a, z)))
     else:
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
         sys.exit(1)

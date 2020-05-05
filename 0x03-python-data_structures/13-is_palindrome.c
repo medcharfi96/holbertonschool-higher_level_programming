@@ -8,15 +8,15 @@
 
 listint_t *get_inodex(int index, listint_t *head)
 {
-	int count = 0;
-	listint_t *test = head;
+int count = 0;
+listint_t *test = head;
 
-	while (count < index)
-	{
-		test = test->next;
-		count++;
-	}
-	return (test);
+while (count < index)
+{
+test = test->next;
+count++;
+}
+return (test);
 }
 /**
  * is_palindrome - check paland

@@ -1,10 +1,11 @@
 #include "lists.h"
 /**
- * is_palindrome - check paland
+ * get_inodex - give inode
+ * @index: int
  * @head: Listint_t
  * Return: 1(mean true)
  */
- 
+
 listint_t *get_inodex(int index, listint_t *head)
 {
 	int count = 0;
@@ -16,7 +17,7 @@ listint_t *get_inodex(int index, listint_t *head)
 		count++;
 	}
 	return (test);
-}	
+}
 /**
  * is_palindrome - check paland
  * @head: Listint_t
@@ -34,15 +35,15 @@ tmp = tmp->next;
 len++;
 }
 if (len == 0)
-	return (1);
-else if (len == 1)
-	return (0);
-for (k = 0; k < (len / 2) ; k++)
-	{
-	 	test_g = get_inodex(len - 1 - k, *head);
-		if (test_d->n != test_g->n)
-				return (0);
-		test_d = test_d->next;
-	}
-	return (1);
+return (1);
+if (len == 1)
+return (0);
+for (k; k < (len / 2); k++)
+{
+test_g = get_inodex(len - 1 - k, *head);
+if (test_d->n != test_g->n)
+return (0);
+test_d = test_d->next;
+}
+return (1);
 }

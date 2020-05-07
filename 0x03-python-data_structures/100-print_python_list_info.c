@@ -13,7 +13,7 @@ void print_python_list_info(PyObject *p)
 {
 	PyObject *obj;
 	size_t size, i, alloc;
-	
+
 	size = Py_SIZE(obj);
 	alloc = ((PyListObject *)p);
 	printf("[*] Size of the Python List = %ld\n", size);

@@ -5,7 +5,6 @@
 /**
  *print_python_list_info - show list info
  *@p: PyObject
- *
  *Return: nothing(meantrue)
  */
 

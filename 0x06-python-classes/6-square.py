@@ -50,16 +50,6 @@ class Square:
         else:
             self.__position = value
 
-    def my_print(self):
-        """ function to print the square """
-        if self.__size != 0:
-            for i in range(self.__size):
-                for j in range(self.__size):
-                    print('#',  end="")
-                print()
-        else:
-            print()
-
     def area(self):
         """ return the area of the square"""
         return (pow(self.__size, 2))

@@ -1,0 +1,45 @@
+>>> add_integer = __import__('0-add_integer').add_integer
+int et int:
+>>> add_integer(10, 2)
+12
+
+int et float:
+>>> add_integer(6.1, 8)
+14
+
+floatet float:
+>>> add_integer(6.1, 3.5)
+9
+
+float only:
+>>> add_integer(2.5)
+100
+
+int pos et neg:
+>>> add_integer(-5, 8)
+3
+
+str only:
+>>> add_integer(hama)
+Traceback (most recent call last):
+TypeError: a must be an integer
+
+str et int:
+>>> add_integer(zz, 8)
+Traceback (most recent call last):
+TypeError: a must be an integer
+
+int et str:
+>>> add_integer(5, ch)
+Traceback (most recent call last):
+TypeError: b must be an integer
+
+Nan:
+>>> add_integer(float('lol'), 78)
+Traceback (most recent call last):
+ValueError: cannot convert float lol to integer
+
+None:
+>>> add_integer(None, None)
+Traceback (most recent call last):
+TypeError: a must be an integer

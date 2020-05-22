@@ -1,4 +1,6 @@
+import module:
 >>> add_integer = __import__('0-add_integer').add_integer
+
 int et int:
 >>> add_integer(10, 2)
 12

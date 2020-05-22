@@ -1,0 +1,31 @@
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+sans outil .:?:
+>>> text_indentation("Mouhamed Charfi")
+Mouhamed Charfi
+
+avec .:?:
+>>> text_indentation("Mouhamed?Charfi")
+Mouhamed?
+<BLANKLINE>
+Charfi
+
+un int:
+>>> text_indentation(1996)
+Traceback (most recent call last):
+TypeError: text must be a string
+
+un float:
+>>> text_indentation(1.5)
+Traceback (most recent call last):
+TypeError: text must be a string
+
+un bool:
+>>> text_indentation(True)
+Traceback (most recent call last):
+TypeError: text must be a string
+
+nothing:
+>>> text_indentation()
+Traceback (most recent call last):
+TypeError: text_indentation() missing 1 required positional argument: 'text'

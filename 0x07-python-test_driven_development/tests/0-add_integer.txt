@@ -37,9 +37,9 @@ TypeError: b must be an integer
 Nan:
 >>> add_integer(float('lol'), 78)
 Traceback (most recent call last):
-ValueError: cannot convert float lol to integer
+ValueError: could not convert string to float: 'lol'
 
 None:
 >>> add_integer(None, None)
 Traceback (most recent call last):
-TypeError: a must be an integer
+TypeError: b must be an integer

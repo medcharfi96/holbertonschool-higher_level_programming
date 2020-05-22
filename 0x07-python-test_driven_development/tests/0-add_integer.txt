@@ -20,17 +20,17 @@ int pos et neg:
 3
 
 str only:
->>> add_integer(hama)
+>>> add_integer("hama")
 Traceback (most recent call last):
 TypeError: a must be an integer
 
 str et int:
->>> add_integer(zz, 8)
+>>> add_integer("zz", 8)
 Traceback (most recent call last):
 TypeError: a must be an integer
 
 int et str:
->>> add_integer(5, ch)
+>>> add_integer(5, "ch")
 Traceback (most recent call last):
 TypeError: b must be an integer
 

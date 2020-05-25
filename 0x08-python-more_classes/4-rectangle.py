@@ -59,12 +59,12 @@ class Rectangle:
 
     def __str__(self):
         """  print the rectangle using # """
-        s = []
+        mat = []
         if self.__height == 0 or self.__width == 0:
             return ""
         else:
             for i in range(0, self.__height):
-                s.append(self.width * "#")
+                mat.append(self.width * "#")
                 if i != self.height - 1:
-                    s.append("\n")
-        return("".join(s))
+                    mat.append("\n")
+        return("".join(mat))

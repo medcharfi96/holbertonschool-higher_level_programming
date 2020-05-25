@@ -69,7 +69,7 @@ class Rectangle:
             return ""
         else:
             for i in range(0, self.__height):
-                mat.append(symbole * self.width)
+                mat.append(sym * self.width)
                 if i != self.height - 1:
                     mat.append("\n")
         return("".join(mat))

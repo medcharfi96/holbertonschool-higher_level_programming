@@ -1,0 +1,28 @@
+""" testing for the 7th function """
+
+>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+>>> bg = BaseGeometry()
+
+check 1:
+>>> bg.integer_validator("med", "charfi")
+>>> [TypeError] name must be an integer
+
+check 2:
+
+>>> bg.integer_validator("med", 9.25)
+>>> [TypeError] name must be an integer
+
+check 3:
+
+>>> bg.integer_validator()
+>>> [TypeError] integer_validator() missing 2 required positional arguments: 'name' and 'value'
+
+check 4:
+
+>>> bg.integer_validator("zbab", -8)
+>>> [ValueError] zbab must be greater than 0
+
+check 5:
+
+>>> bg.integer_validator("zbab", 7, 185, 1111)
+>>> [TypeError] integer_validator() takes 3 positional arguments but 5 were given

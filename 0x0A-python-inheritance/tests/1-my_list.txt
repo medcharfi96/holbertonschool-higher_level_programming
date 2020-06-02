@@ -2,7 +2,7 @@
 test for the first fun
 """
 ==========================
-import module:
+
 >>> MyList = __import__('1-my_list').MyList
 
 test first:
@@ -45,4 +45,5 @@ test five:
 test sex:
     >>> my_list = MyList()
     >>> my_list.append(478)
+    >>> my_list.print_sorted()
     [478]

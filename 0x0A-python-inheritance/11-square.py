@@ -42,6 +42,7 @@ class Rectangle(BaseGeometry):
 
 
 class Square(Rectangle):
+    """ class desc"""
     def __init__(self, size):
         """ the square class"""
         self.__size = self.integer_validator('size', size)
@@ -49,8 +50,10 @@ class Square(Rectangle):
         self.__size = size
 
     def area(self):
+        """add desc"""
         bass = self.__size * self.__size
         return (bass)
 
     def __str__(self):
+        """ discrip"""
         return("[Square] {:d}/{:d}".format(self.__size, self.__size))

@@ -2,7 +2,7 @@
 test for the first fun
 """
 ==========================
-
+import module:
 >>> MyList = __import__('1-my_list').MyList
 
 test first:
@@ -19,7 +19,7 @@ test second:
     >>> my_list.append("ABC)
     >>> my_list.append("MNO")
     >>> my_list.append("JKL")
-    >>> my_list.print_sorted(my_list)
+    >>> my_list.print_sorted()
     ["ABC", "JKL", "MNO"]
 
 third test:

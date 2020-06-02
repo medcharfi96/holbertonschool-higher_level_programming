@@ -12,8 +12,6 @@ test for the first fun
 >>> my_list.print_sorted()
 [1, 2, 4, 5]
 
-
-
 >>> my_list = MyList()
 >>> my_list.append("ABC)
 >>> my_list.append("MNO")

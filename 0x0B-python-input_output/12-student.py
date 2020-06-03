@@ -14,10 +14,11 @@ class Student:
 
     def to_json(self, attrs=None):
         """rendre un fichier json"""
+        if type(attrs) is not list:
+            return self.__dict__
         if type(attrs) is list:
             khra = {}
-            for count in range(0, len(attrs)):
-                if attrs[count] == self.__dict__:
-                    khra[count] = self.__dict__[i]
+            for count in attrs:
+                if count is not str and count in self.__dict__:
+                    khra[count] = self.__dict__[count]
             return khra
-        return (self.__dict__)

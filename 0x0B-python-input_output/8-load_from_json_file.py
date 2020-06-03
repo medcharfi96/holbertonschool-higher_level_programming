@@ -3,11 +3,11 @@
 changer du json a un fichier
 """
 
+
 import json
 
 
 def load_from_json_file(filename):
     """enregister dun objet au json"""
-
-    with open(filename, encoding='UTF8') as fichier:
-        return json.loads(fichier)
+    with open(filename, mode='r', encoding='UTF-8') as fichier:
+        return json.load(fichier)

@@ -6,4 +6,4 @@ INSERT INTO first_table
 VALUES
 ( -- first row: values for the columns in the list above
  89, "Holberton School"
-)
+);

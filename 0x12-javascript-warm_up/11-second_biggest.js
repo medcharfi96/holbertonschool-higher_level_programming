@@ -4,7 +4,9 @@ const tab = [];
 let res;
 if (process.argv.length > 3) {
   for (i = 0; i < process.argv.length; i++) {
-    if (typeof (parseInt(process.argv[i])) === 'number') {
+    if (isNaN(process.argv[i])) {
+      continue;
+    } else if (typeof (parseInt(process.argv[i])) === 'number') {
       tab.push(process.argv[i]);
     }
   }

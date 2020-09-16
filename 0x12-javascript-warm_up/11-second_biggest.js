@@ -7,13 +7,12 @@ if (process.argv.length > 3) {
     if (isNaN(process.argv[i])) {
       continue;
     } else if (typeof (parseInt(process.argv[i])) === 'number') {
-      tab.push(process.argv[i]);
+      tab.push(parseInt(process.argv[i]));
     }
   }
-  tab.sort();
+  tab.sort(function (a, b) { return a - b; });
   res = tab[tab.length - 2];
 } else {
   res = 0;
 }
-
 console.log(res);

@@ -39,7 +39,6 @@ module.exports = class Square extends Rectangle {
     let cchprt = '';
     if (c === undefined) {
       cchprt = 'X';
-      console.log('je suis la');
     } else {
       cchprt = c;
     }

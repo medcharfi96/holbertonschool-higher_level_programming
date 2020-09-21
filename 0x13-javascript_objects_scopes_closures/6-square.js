@@ -36,19 +36,15 @@ module.exports = class Square extends Rectangle {
   }
 
   charPrint (c) {
-    let cchprt = '';
     if (c === undefined) {
-      cchprt = 'X';
-    } else {
-      cchprt = c;
+      c = 'X';
     }
-    let affichage;
-    for (let index = 0; index < this.width; index++) {
-      affichage = '';
-      for (let index1 = 0; index1 < this.height; index1++) {
-        affichage = affichage + cchprt;
+    for (let index = 0; index < this.height; index++) {
+      let ad = '';
+      for (let index1 = 0; index1 < this.width; index1++) {
+        ad = ad + c;
       }
-      console.log(affichage);
+      console.log(ad);
     }
   }
 };

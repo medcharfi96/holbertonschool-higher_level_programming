@@ -29,8 +29,9 @@ module.exports = class Rectangle {
     this.width = this.width * 2;
   }
 };
-const Rectangle = require('./4-rectangle');
-module.exports = class Square extends Rectangle {
+
+const RAc = require('./4-rectangle');
+module.exports = class Square extends RAc {
   constructor (size) {
     super(size, size);
   }

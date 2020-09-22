@@ -1,8 +1,8 @@
 #!/usr/bin/node
 const reponse = require('request');
-reponse(process.argv[2], function (err, url) {
+reponse(process.argv[2], function (err, urlADREss) {
   if (!err) {
-    console.log('code: ' + url.statusCode);
+    console.log('code: ' + urlADREss.statusCode);
   } else {
     console.log(err);
   }
